@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .card {
+            background-color: green;
+            padding: 20px;
+            border: 2px solid green;
+            border-radius: 5px;
+            width: 300px;
+            margin: 0 auto;
+        }
+        input[type="email"],
+        input[type="password"],
+        button {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background-color: white;
+            color: green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
